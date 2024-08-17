@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>People of Iran</title>
+        <link href="https://fonts.googleapis.com/css?family=Anton%7CMerriweather+Sans&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/css-world2.css">
+    </head>
+
+    <body>
+    <!-- Part 1 - The logo with introduction -->
+        
+        <section id="h1" class="h1">
+            <header>
+                <p class="warning">Warning, the optional videos for more context are not for the faint of heart, you have been warned!</p>
+            </header>
+            <img src="pictures/free-iran.jpg" class="free-iran" alt="free-iran">
+            <h1 class="logo">The people of Iran - Stand together</h1>
+                <p class="introduction">
+                For far to long, have we Iranians suffered from how the government is running our country. 
+                The plane crash that happened, is the last straw. We wont take any excuses, that the reason the plane crash happened was because of the tension between Iran and America.<br><br> 
+                We have seen the way the government handled the situation, lying how the plane crash happened and brushing it off like it was nothing. We have had enough, stand together, Iranians!</p>
+        </section>
+
+    <!-- Part 1 - The Plane Crash and Interviews -->
+        
+        <section id="h2" class="h2">
+            <h2 class=plane-crash>The Plane Crash - Interviews</h2>
+                <p class="facts">
+                Not only Iranians, but other passangers around the world, had to befall on a tragedy that could have been avoided. Flight PS752, 176 passangers, 82 Iranians, all deceased. 
+                The families suffering, we sympathize with them. We have gathered two interviews, whom wanted to share their story.</p>
+        <div class="interviews">
+            <aside class="videos">
+                <video width="560" height="315" controls>
+                    <source src="videos/interview1.mp4" type="video/mp4">
+                    The browser you are using does not support video tag.
+                </video>
+                <p class="video1-about">This interview entails about a worried wife calling her husband, Hassan Shadkhoo, before the unimaginable plane crash</p>
+            </aside>
+            <aside class="videos">
+                <video width="560" height="315" controls>
+                    <source src="videos/interview2.mp4" type="video/mp4">
+                    The browser you are using does not support video tag.
+                </video>
+                <p class="video2-about">This interview entails about Hamed Esmaeilion, who lost his daughter Reera and wife Parisa Eghbalian. He wants to share his story, even though, knowing how painful it is.</p>
+            </aside>
+        </div>
+        </section>
+        
+    <!-- Part 2 - The proof and lies -->
+        
+        <header id="h3" class="h3">
+            <h3 class=proof>The proof and lies</h3>
+            <button type="button" class="collapsible">Open content</button>
+            <div class="content">
+                <p class="proof-facts">
+                A video on social media started to appear, where it showed what looked like a missile hitting the plane. This as we now know, appeared to be true.<br><br>
+                Our Iranian government though, tried to deny this, by saying the crash happened because of engine failure, but after a few days, they had to come out with the truth, as the Canadian government started to find out the truth. 
+                So that the Iranian government could save them selves and not look bad, they made an apology and said the truth.<br><br> If the government of Canada had not interfered, the Iranian's would have not got the real truth behind the plane crash. 
+                It is despicable, that the Iranian government would want to hide the truth. Here is the video proof that started circuling around.</p>
+            <aside class="proof-video">
+                <video width="560" height="315" controls>
+                    <source src="videos/proof-video.mp4" type="video/mp4">
+                    The browser you are using does not support video tag.
+                </video>
+            </aside>
+            <aside>
+                <img src="pictures/justin-trudeau.jpg" class="justin-trudeau" alt="justin-trudeau">
+                <p class="canada">The prime minister of Canada, Justin Trudeau, is the one we have to thank for. He said he would not rest until the case obtained closure, transparency and justice. 
+                He was also the one who suggested that the plane was shot down by Iranian missiles.<br><br> 
+                Thanks to the pressure, the Iranian government had to come out and say the plane was brought down "unintentionally".</p>
+            </aside>
+            </div>
+        </header>
+        
+    <!-- Part 3 - The statement given by the President -->
+        
+        <section id="h4" class="h4">
+            <h4 class=statement>The statement given by President Hassan Rouhani</h4>
+                <p class="thoughts">
+                The President has given his statement on the situation. Dare we say though, the statement is not enough to heal the wounds inflicted in our hearts. 
+                The lives taken "unintentionally", could have been avoided if the government was patient enough. Having to take the blame on the situation against them and America, it is blatantly stupid.
+                </p>
+        </section>
+        
+    <!-- Collapsible button script - Help from https://www.w3schools.com/howto/howto_js_collapsible.asp -->
+        
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+        
+    <!-- Footer -->
+    
+        <footer>
+            © Community driven, by the people of Iran whom have had enough of the current government.
+            <br>Want to take part in shaping the website? Send us a email at <a class="email" href="mailto:Freeiran@gmail.com">Freeiran@gmail.com</a>
+        </footer>
+    </body>
+</html>

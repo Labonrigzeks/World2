@@ -1,0 +1,258 @@
+/* body, footer and email */
+
+body {
+    background-color: black;
+}
+
+footer {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 30px;
+    color: #C90010;
+	text-align: center;
+    margin-top: 50px;
+	border-style: groove;
+	border-color: white;
+	border-width: 10px;
+	background-color: black;
+	width: 98.5%;
+}
+
+/* email link styling */
+
+.email:link {
+    color: red;
+    text-decoration: underline;
+}
+
+.email:visited {
+    color: red;
+    text-decoration: none;
+}
+
+.email:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.email:active {
+    color: white;
+    text-decoration: underline;
+}
+
+/* h1 */
+
+.logo {
+    font-family: 'Anton', sans-serif;
+	font-size: 50px;
+    color: #C90010;
+	text-align: center;
+    margin-top: 10px;
+}
+
+.warning {
+    font-family: 'Anton', sans-serif;
+	font-size: 45px;
+    color: #C90010;
+	text-align: center;
+    margin-top: auto;
+}
+
+.introduction {
+    font-family: 'Merriweather Sans', sans-serif;
+	font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+/* h2 */
+
+.plane-crash {
+    font-family: 'Anton', sans-serif;
+	font-size: 50px;
+    color: #C90010;
+    text-align: center;
+}
+
+.facts {
+    font-family: 'Merriweather Sans', sans-serif;
+	font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.video1-about {
+    font-family: 'Merriweather Sans', sans-serif;
+	font-size: 30px;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.video2-about {
+    font-family: 'Merriweather Sans', sans-serif;
+	font-size: 30px;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+/* h3 */
+
+.proof {
+    font-family: 'Anton', sans-serif;
+	font-size: 50px;
+    color: #C90010;
+    text-align: center;
+}
+
+.proof-facts {
+    font-family: 'Merriweather Sans', sans-serif;
+	font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.canada {
+    font-family: 'Merriweather Sans', sans-serif;
+	font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+/* h4 */
+
+.statement {
+   font-family: 'Anton', sans-serif;
+   font-size: 50px;
+   color: #C90010;
+   text-align: center; 
+}
+
+.thoughts {
+    font-family: 'Merriweather Sans', sans-serif;
+	font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+/* pictures */
+
+/* picture 1 */
+/* source: http://iranpoliticsclub.net/animation-graphics/protest-posters/index.htm */
+
+.free-iran {
+    position: relative;
+    max-width: 20%;
+    left: 40%;
+}
+
+/* picture 2 */
+/* source: https://www.bbc.com/news/world-middle-east-51047006 */
+
+.justin-trudeau {
+    position: relative;
+    max-width: 30%;
+    left: 35.1%;
+    margin-top: 50px;
+}
+
+/* videos */
+
+/* 
+video 1 - source: https://www.youtube.com/embed/WXpKTnYZtfE
+
+video 2 - source: https://www.youtube.com/embed/09wj5pnjouU
+*/
+
+/*flexbox for video 1 and 2 */
+
+.interviews {
+  display: flex;
+}
+
+.videos {
+  margin: 0 auto;
+  margin-bottom: 150px;
+  padding: 25px;
+  width: 560px;
+  height: 315px; 
+}
+@media only screen and (max-width: 992px) {
+	.video{
+		width: 80%;
+		height: 400px;
+	}
+}
+@media only screen and (max-width: 600px) {
+   .video{
+		width: 100%;
+		height: 500px;
+	}
+}
+
+/* video 3 */
+/* source: https://www.youtube.com/embed/M7r4VMTM2GE */
+
+.proof-video {
+    margin: 0 auto;
+    width: 560px;
+    height: 315px;
+}
+@media only screen and (max-width: 992px) {
+	.video{
+		width: 80%;
+		height: 400px;
+	}
+}
+@media only screen and (max-width: 600px) {
+   .video{
+		width: 100%;
+		height: 500px;
+	}
+}
+
+/* scrollbar design for chrome - help from https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 15px white;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 15px #C90010;
+  border-radius: 10px;
+}
+
+/* collapsible button script - help from https://www.w3schools.com/howto/howto_js_collapsible.asp */
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: black;
+  color: #C90010;
+  cursor: pointer;
+  padding: 20px;
+  width: 99.5%;
+  border-style: dotted;
+  border-color: whitesmoke;
+  border-width: 10px;
+  font-family: 'Acme', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  outline: none;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: whitesmoke;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  display: none;
+}
